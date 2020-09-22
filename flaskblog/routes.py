@@ -8,8 +8,6 @@ from flask_login import login_user,current_user,logout_user,login_required
 from flaskblog import request
 
 
-
-
 @app.route('/')
 @app.route('/home')
 def home():
