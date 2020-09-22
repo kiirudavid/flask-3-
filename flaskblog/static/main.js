@@ -1,13 +1,4 @@
 
-// $(document).ready(function(){
-//     let numberOfLikes = 0
-//     $("#like").click(function(){
-//         numberOfLikes = +1
-//         document.getElementById("like").innerHTML = numberOfLikes;
-
-//     });
-
-// });
 
 let click = 0;
 let clicks = 0;
@@ -21,8 +12,3 @@ function onClicks() {
 }
 
 
-// $(document).ready(function(){
-//     $("#dd").click(function(){
-//         $("#cc").show("5000")
-//     });
-// });
