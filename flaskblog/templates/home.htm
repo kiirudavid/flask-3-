@@ -2,8 +2,8 @@
 {% block content %}
 
 <header id="simon">
-    <h1 class="blogging">Welcome to pitch solutions</h1>
-    <p class="blogger">Do you want to get the latest pitches well then  Sign in.</p><br><br>
+    <h1 class="blogging">Welcome to the Blog</h1>
+    <p class="blogger">Sign in and Keep us informed on the latest.</p><br><br>
 
     
     <i class="fa fa-quote-left" aria-hidden="true"><p class="mwili">{{quote.quote}}</p><i class="fa fa-quote-right" aria-hidden="true"></i>
@@ -17,7 +17,7 @@
         <div class="media-body">
             <div class="article-metadata">
                 <a class="mr-2" href="#">Posted by : {{ post.author.username }}</a>
-                <small class="text-muted">Posted on : {{ post.date_posted.strftime('%Y-%m-%d') }}</small>
+                <small class="text-muted">Posted on : {{ post.date_posted.strftime('%d') }}</small>
             </div>
             <h2><a class="article-title" id="heada" href="{{ url_for('post', post_id=post.id) }}">{{ post.title }}</a>
             </h2>
@@ -29,7 +29,7 @@
             <i onClick="onClicks()" class="fa fa-thumbs-down ml-5 icons" style="color:red">
                 <p id="clicks">0</p>
             </i><br>
-            <button type="button" class="btn btn-outline-secondary btn-sm btn-rounded waves-effect">COMMENT</button>
+            <button type="button" class="btn btn-outline-secondary btn-sm btn-rounded waves-effect">Comment</button>
 
 
     </article>
