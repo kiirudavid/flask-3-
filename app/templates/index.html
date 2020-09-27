@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro %}
+<!-- Styles block -->
+
+{%block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico')}}">
+
+{%endblock%}
+<!-- Content block -->
+{%block content%}
+<div class="jumbotron text-center" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRWpIDcaFClDcwTwcffXWsuZHmk88IQqCBy9A&usqp=CAU); background-image: no-reapeat; padding: 100px 40px;">
+    
+</div>
+<div class="container" style="padding-bottom: 20px;">
+    <a href="{{url_for('main.new_pitch')}}" class="btn btn-outline-dark"  style="font-weight: 720; background-color:beige;"> Add A Pitch<New pitch></a>
+</div>
+
+<div class="container" style="background-color: bisque;">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="well well-lg">
+                <h3>Interview Pitches</h3>
+                <p>create interview pitch.</p>
+                <a href="{{url_for('main.interview_pitches')}}" class="btn btn-success -center">display</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="well well-lg">
+                <h3>Product Pitches</h3>
+                <p>create product pitch.</p>
+                <a href="{{url_for('main.product_pitches')}}" class="btn btn-success -center">display</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="well well-lg">
+                <h3>Promotion Pitches</h3>
+                <p>create a promotion pitch </p>
+                <a href="{{url_for('main.promotion_pitches')}}" class="btn btn-success -center">display</a>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}

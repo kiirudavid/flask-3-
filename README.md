@@ -1,75 +1,82 @@
-# Pitch Application
- <img src="./p.png">
+:satisfied:
 
-#### By:
-1. Kiiru David
+# Flask-Pitch
 
-# DESCRIPTION
+## Description
 
-This is a Python-Flask Application that allows users to create one minute pitch. You only have 60 seconds to impress someone. 1 minute can make or break you.
-The users will submit their one minute pitches and other users will vote on them and leave comments to give their feedback on them.
+- This is a python-Flask application that has been created to enable users to create and post pitches.A User can be able to create an account and their information will be saved into the databse of the website. The User is able to create a post whereby they will be able to update and delete posts at free will.A users is also able to Upvote and Downvote blog posts according to his preferences.
 
-## User Story
+## Project Screenshot
 
-- Users can see the pitches other people have posted.
+- This is the Project Screenshot of the Home page
+ <img src="app\static\photos\Capture.PNG">
 
-- Users can svote on the pitch they liked and give it a downvote or upvote.
+## Live-Link
+ - You can view the project on your browser using this livelink. `https://eugenek-pitch.herokuapp.com/`
+ 
+## BDD
 
-- Users can sign in to leave a comment.
 
-- Users can register on the website.
+1.  On loading the website the user can see the homepage that has quotes that have been posted by others.
+2.  The User needs to Create an account to be able to post anything.
 
-- Users can receive a welcoming email once they sign up.
+- input: The user credentials are required for account Creation.
+- output: Once correct user credentials are added and they are successful user is redirected to the login page.
+  A user needs unique username and password for account creation to be successful.If not account will not be created.
 
-- Users can view the pitches they have created in their profile page..
+3. The user logs into the website.
+   - input: The account details used to create the account.
+   - Output: User is redirected to the home page with new navigation bar that allows him to add posts.
+4. The User can now create a post
+   - input:The User clicks on the new post link and adds his new post.
+   - output: The new post is displayed on the home page.
+5. User can update post.
+   - Input: User clicks on the quote and he has created.
+   - Output: A redirection to a page that allows them to update the post and submit.
+6. User can delete Post
+   - Input:User clicks on the quote that he has created.
+   - Output: The delete button appears that allows one to delete posts created.
+7. Random quotes are displayed on the home page on each reload or refreshing of the website.
+8. A user has the ability to upvote and downvote a blog.
+    - Press on the green Thumps up updates the vote count.
+    - Pressing on the downvote adds count to the dislikes.
 
-- Users can comment on the different pitches and leave feedback. 
+## Set Up Instructions
 
-- Users can submit a pitch in any category. 
-
-- Users can view the different categories. 
-
-## Known Bugs
-If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue here by including your search query and the expected result.
-
-If you'd like to request a new function, feel free to do so by opening an issue here. Please include sample queries and their corresponding results
-## Specifications
-
-## setup /Installation Requirements
-First clone the repo
-   ```$ git clone  ```
-
-After cloning, navigate to the project:
-   `` $ cd news-flask``
-
-Then install all the requirements through pip:
-   ```$ pip install -r requirements.txt ```
-
-Make the file executable:
-   ```$ chmod +x start.sh```
-
-Run the application:
-   ```$ ./start.sh ```
-
-Now navigate to your browser at: ```localhost:5000```
-
+- Open your terminal and move to a directory where you would like to store the project eg. cd Documents
+- Use the command `git clone` to clone the aplication at `https://github.com/eugenek45/kip`.
+- After cloning navigate to the project.
+- Run `pip install` to install all the dependencies
+- Now run the project using your terminal with the command `./start.sh`
 
 ## Technologies Used
-* Python
-* Flask
-* HTML5
-* CSS3
-* Bootstrap
 
-## Support and contact details
-call me on
+- PYTHON
+- PIP
+- FLASK FRAMEWORK
+- BOOTSTRAP
+- CSS
+- POSTGRESS
 
-<img src="https://bit.ly/2H4L6UZ" width="109" style="border-radius:50%;">:0713275530
+## Licence
 
+The MIT License (MIT)
+Copyright (c) 2020 Eugene Kiprotich.
 
- <img src="https://bit.ly/2Smueyp" width="109" style="border-radius:50%;">:davidmaina085@gmail.com
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-## License
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-[MIT License](LICENSE.md)
-Copyright (c) [2020] [kiiru David]
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+@Eugene kiprotich
+
+## Contact Details
+
+- You can reach me through:
+  0723574552
+  Eugenekiprotich0@gmail.com
+
+## Author
+
+**Eugene kiprotich**
