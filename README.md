@@ -11,7 +11,7 @@
  <!-- <img src="app\static\photos\Capture.PNG"> -->
 
 ## Live-Link
- - You can view the project on your browser using this livelink. `https://eugenek-pitch.herokuapp.com/`
+ - You can view the project on your browser using this livelink. `https://maichez-flask3.herokuapp.com/`
  
 ## BDD
 
